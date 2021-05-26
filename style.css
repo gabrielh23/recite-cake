@@ -1,0 +1,149 @@
+body {
+    background-color: rgb(252, 255, 214);
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+header {  
+    min-height: 50px;
+    background-color: rgb(207, 43, 43);
+    padding: 0 20%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav > a {
+    color: white;
+}
+
+main {
+    max-width: 1148px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: (4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "main-title main-title main-title main-title"
+    "origin origin origin origin"
+    "quote quote quote quote"
+    "main-cake main-cake main-cake main-cake"
+    "contact contact contact contact";
+}
+
+#main-title {
+    grid-area: main-title;
+    text-align: center;
+}
+
+#origin {
+    grid-area: origin;
+}
+
+#origin, #main-cake {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#main-cake {
+    grid-area: main-cake;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#origin__cake-photo {
+    width: 100%;
+    max-width: 300px;
+    max-height: 230px;
+}
+
+#main-cake__photo {
+    width: auto;
+    max-height: 250px;
+    float: left;
+    margin-right: 20px;
+}
+
+.origin__cake {
+    background-color: white;
+    padding: 30px;
+}
+
+.sobre {
+    padding: auto;
+}
+
+#quote {
+    grid-area: quote;
+    background-image: url(/src/img/sweet-cake.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    background-color: rgb(128, 0, 0);
+    color: white;
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#main-cake_ingredients, .main-cake_ingredients {
+    margin: 20px 10px;
+}
+
+.others-cakes {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+}
+
+#contact {
+    grid-area: contact;
+    padding-bottom: 20px;
+}
+
+.saiba-mais {
+    max-width: auto;
+}
+
+footer {
+    background-color: #3e3e3e;
+    color: lightgray;
+    padding: 10px 11%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icon {
+    max-width: 40px;
+    max-height: 40px;
+    padding: 5px;
+}
+
+.social-icon:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,58 @@
+@media (max-width: 480px) {
+  main {
+    margin: 0 20px 20px 20px;
+    grid-template-columns: 100%;
+    grid-template-areas: "main-title" "origin" "quote" "main-cake" "contact";
+  }
+  main #origin {
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+  main #origin #origin__cake-photo {
+    max-width: 100%;
+  }
+  main #quote {
+    background-image: none;
+  }
+  main #main-cake {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "main-cake__chocolate main-cake__chocolate main-cake__chocolate main-cake__chocolate" "others-cakes others-cakes others-cakes others-cakes";
+  }
+  main #main-cake #main-cake__chocolate {
+    grid-area: main-cake__chocolate;
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+  main #main-cake #main-cake__chocolate #main-cake__recipe #main-cake__photo {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  main #main-cake #main-cake__chocolate #main-cake_ingredients {
+    margin-top: 20px;
+  }
+  main #main-cake .others-cakes {
+    grid-area: others-cakes;
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+  main #contact form #input {
+    width: 95%;
+    margin-right: 10px;
+  }
+  main #contact form #send {
+    width: 95%;
+    align-self: center;
+  }
+  main #contact form #not-send {
+    width: 95%;
+    justify-content: center;
+  }
+
+  #footer {
+    flex-flow: column wrap;
+  }
+}
+
+/*# sourceMappingURL=input.css.map */

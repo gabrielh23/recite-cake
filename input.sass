@@ -1,0 +1,60 @@
+@media (max-width: 480px)
+    main
+        margin: 0 20px 20px 20px
+        grid-template-columns: 100%
+        grid-template-areas: "main-title" "origin" "quote" "main-cake" "contact"
+
+        #origin
+            flex-flow: column wrap
+            justify-content: center
+
+            #origin__cake-photo
+                max-width: 100%
+            
+        #quote
+            background-image: none
+            
+        
+        #main-cake
+            display: grid
+            grid-template-columns: 100%
+            grid-template-rows: auto
+            grid-template-areas: "main-cake__chocolate main-cake__chocolate main-cake__chocolate main-cake__chocolate" "others-cakes others-cakes others-cakes others-cakes"
+            #main-cake__chocolate
+                grid-area: main-cake__chocolate
+                flex-flow: column wrap
+                justify-content: center
+
+                #main-cake__recipe
+
+                    #main-cake__photo
+                        width: 100%
+                        margin-bottom: 20px
+                
+                #main-cake_ingredients
+                    margin-top: 20px
+            
+            .others-cakes
+                grid-area: others-cakes
+                flex-flow: column wrap
+                justify-content: center
+        
+        #contact
+            form
+                #input
+                    width: 95%
+                    margin-right: 10px
+                #send
+                    width: 95%
+                    align-self: center
+                #not-send
+                    width: 95%
+                    justify-content: center
+                
+
+    #footer
+        flex-flow: column wrap
+
+        
+
+    
